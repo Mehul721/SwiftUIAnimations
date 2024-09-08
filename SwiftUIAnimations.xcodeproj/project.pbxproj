@@ -11,6 +11,8 @@
 		750B8A7D2C8E187E005B8304 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B8A7C2C8E187E005B8304 /* ContentView.swift */; };
 		750B8A7F2C8E187F005B8304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750B8A7E2C8E187F005B8304 /* Assets.xcassets */; };
 		750B8A822C8E187F005B8304 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750B8A812C8E187F005B8304 /* Preview Assets.xcassets */; };
+		750B8A892C8E18A3005B8304 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B8A882C8E18A3005B8304 /* OnboardingView.swift */; };
+		750B8AC12C8E1C6E005B8304 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 750B8AC02C8E1C6E005B8304 /* RiveRuntime */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,21 @@
 		750B8A7C2C8E187E005B8304 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		750B8A7E2C8E187F005B8304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750B8A812C8E187F005B8304 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		750B8A882C8E18A3005B8304 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		750B8AB02C8E1BCA005B8304 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
+		750B8AB12C8E1BCA005B8304 /* check.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = check.riv; sourceTree = "<group>"; };
+		750B8AB22C8E1BCA005B8304 /* confetti.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = confetti.riv; sourceTree = "<group>"; };
+		750B8AB32C8E1BCA005B8304 /* house.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = house.riv; sourceTree = "<group>"; };
+		750B8AB42C8E1BCA005B8304 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
+		750B8AB52C8E1BCA005B8304 /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_button.riv; sourceTree = "<group>"; };
+		750B8AB62C8E1BCA005B8304 /* shapes.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = shapes.riv; sourceTree = "<group>"; };
+		750B8AB82C8E1BCA005B8304 /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = menu_button.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/menu_button.riv"; sourceTree = "<group>"; };
+		750B8AB92C8E1BCA005B8304 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = icons.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/icons.riv"; sourceTree = "<group>"; };
+		750B8ABA2C8E1BCA005B8304 /* check.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = check.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/check.riv"; sourceTree = "<group>"; };
+		750B8ABB2C8E1BCA005B8304 /* shapes.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = shapes.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/shapes.riv"; sourceTree = "<group>"; };
+		750B8ABC2C8E1BCA005B8304 /* confetti.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = confetti.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/confetti.riv"; sourceTree = "<group>"; };
+		750B8ABD2C8E1BCA005B8304 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = button.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/button.riv"; sourceTree = "<group>"; };
+		750B8ABE2C8E1BCA005B8304 /* house.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = house.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/house.riv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750B8AC12C8E1C6E005B8304 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +71,9 @@
 			children = (
 				750B8A7A2C8E187E005B8304 /* SwiftUIAnimationsApp.swift */,
 				750B8A7C2C8E187E005B8304 /* ContentView.swift */,
+				750B8A882C8E18A3005B8304 /* OnboardingView.swift */,
 				750B8A7E2C8E187F005B8304 /* Assets.xcassets */,
+				750B8AB72C8E1BCA005B8304 /* RiveAssets */,
 				750B8A802C8E187F005B8304 /* Preview Content */,
 			);
 			path = SwiftUIAnimations;
@@ -65,6 +85,27 @@
 				750B8A812C8E187F005B8304 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		750B8AB72C8E1BCA005B8304 /* RiveAssets */ = {
+			isa = PBXGroup;
+			children = (
+				750B8AB02C8E1BCA005B8304 /* button.riv */,
+				750B8ABD2C8E1BCA005B8304 /* button.riv */,
+				750B8AB12C8E1BCA005B8304 /* check.riv */,
+				750B8ABA2C8E1BCA005B8304 /* check.riv */,
+				750B8AB22C8E1BCA005B8304 /* confetti.riv */,
+				750B8ABC2C8E1BCA005B8304 /* confetti.riv */,
+				750B8AB32C8E1BCA005B8304 /* house.riv */,
+				750B8ABE2C8E1BCA005B8304 /* house.riv */,
+				750B8AB42C8E1BCA005B8304 /* icons.riv */,
+				750B8AB92C8E1BCA005B8304 /* icons.riv */,
+				750B8AB52C8E1BCA005B8304 /* menu_button.riv */,
+				750B8ABB2C8E1BCA005B8304 /* shapes.riv */,
+				750B8AB82C8E1BCA005B8304 /* menu_button.riv */,
+				750B8AB62C8E1BCA005B8304 /* shapes.riv */,
+			);
+			path = RiveAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +124,9 @@
 			dependencies = (
 			);
 			name = SwiftUIAnimations;
+			packageProductDependencies = (
+				750B8AC02C8E1C6E005B8304 /* RiveRuntime */,
+			);
 			productName = SwiftUIAnimations;
 			productReference = 750B8A772C8E187E005B8304 /* SwiftUIAnimations.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,9 @@
 				Base,
 			);
 			mainGroup = 750B8A6E2C8E187E005B8304;
+			packageReferences = (
+				750B8ABF2C8E1C6E005B8304 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = 750B8A782C8E187E005B8304 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750B8A892C8E18A3005B8304 /* OnboardingView.swift in Sources */,
 				750B8A7D2C8E187E005B8304 /* ContentView.swift in Sources */,
 				750B8A7B2C8E187E005B8304 /* SwiftUIAnimationsApp.swift in Sources */,
 			);
@@ -344,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		750B8ABF2C8E1C6E005B8304 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		750B8AC02C8E1C6E005B8304 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 750B8ABF2C8E1C6E005B8304 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 750B8A6F2C8E187E005B8304 /* Project object */;
 }
