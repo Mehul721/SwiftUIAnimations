@@ -24,8 +24,7 @@ struct OnboardingView: View {
             .overlay(
                 Label("Start the course",systemImage: "arrow.forward")
                     .offset(x:4,y:4)
-                    .font(.headline)
-            )
+                    .font(.headline))
             .background(
                 Color.black
                     .clipShape(RoundedRectangle(cornerRadius: 30))
