@@ -13,6 +13,9 @@
 		750B8A822C8E187F005B8304 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750B8A812C8E187F005B8304 /* Preview Assets.xcassets */; };
 		750B8A892C8E18A3005B8304 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B8A882C8E18A3005B8304 /* OnboardingView.swift */; };
 		750B8AC12C8E1C6E005B8304 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 750B8AC02C8E1C6E005B8304 /* RiveRuntime */; };
+		7540A3792C92132400CBD479 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7540A3752C92132400CBD479 /* Inter-Regular.ttf */; };
+		7540A37A2C92132400CBD479 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7540A3762C92132400CBD479 /* Inter-SemiBold.ttf */; };
+		7540A37B2C92132400CBD479 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7540A3772C92132400CBD479 /* Poppins-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,10 @@
 		750B8ABC2C8E1BCA005B8304 /* confetti.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = confetti.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/confetti.riv"; sourceTree = "<group>"; };
 		750B8ABD2C8E1BCA005B8304 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = button.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/button.riv"; sourceTree = "<group>"; };
 		750B8ABE2C8E1BCA005B8304 /* house.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = house.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/house.riv"; sourceTree = "<group>"; };
+		7540A3752C92132400CBD479 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		7540A3762C92132400CBD479 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		7540A3772C92132400CBD479 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		7540A37C2C92136100CBD479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +76,11 @@
 		750B8A792C8E187E005B8304 /* SwiftUIAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				7540A37C2C92136100CBD479 /* Info.plist */,
 				750B8A7A2C8E187E005B8304 /* SwiftUIAnimationsApp.swift */,
 				750B8A7C2C8E187E005B8304 /* ContentView.swift */,
 				750B8A882C8E18A3005B8304 /* OnboardingView.swift */,
+				7540A3782C92132400CBD479 /* Fonts */,
 				750B8A7E2C8E187F005B8304 /* Assets.xcassets */,
 				750B8AB72C8E1BCA005B8304 /* RiveAssets */,
 				750B8A802C8E187F005B8304 /* Preview Content */,
@@ -106,6 +115,16 @@
 				750B8AB62C8E1BCA005B8304 /* shapes.riv */,
 			);
 			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+		7540A3782C92132400CBD479 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7540A3752C92132400CBD479 /* Inter-Regular.ttf */,
+				7540A3762C92132400CBD479 /* Inter-SemiBold.ttf */,
+				7540A3772C92132400CBD479 /* Poppins-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +191,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7540A37A2C92132400CBD479 /* Inter-SemiBold.ttf in Resources */,
 				750B8A822C8E187F005B8304 /* Preview Assets.xcassets in Resources */,
+				7540A37B2C92132400CBD479 /* Poppins-Bold.ttf in Resources */,
+				7540A3792C92132400CBD479 /* Inter-Regular.ttf in Resources */,
 				750B8A7F2C8E187F005B8304 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +345,7 @@
 				DEVELOPMENT_TEAM = 63Q8FTN27W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -352,6 +375,7 @@
 				DEVELOPMENT_TEAM = 63Q8FTN27W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
