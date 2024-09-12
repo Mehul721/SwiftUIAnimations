@@ -18,6 +18,8 @@ struct OnboardingView: View {
                 Text("Learn design & code")
                     .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
                     
+                Text("Don't skip design.")
+                    .customFont(.title)
                 
                 button.view()
                     .frame(width: 236, height: 64)
