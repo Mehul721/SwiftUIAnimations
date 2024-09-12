@@ -14,12 +14,15 @@ struct OnboardingView: View {
     var body: some View {
         ZStack {
             background
-            VStack {
-                Text("Learn design & code")
+            VStack(alignment:.leading, spacing: 16) {
+                Text("Learn design     & code")
                     .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
                     
                 Text("Don't skip design.")
-                    .customFont(.title)
+                    .customFont(.body)
+                    .opacity(0.7)
+                    .frame(maxWidth: .infinity,alignment: .leading)
+                Spacer()
                 
                 button.view()
                     .frame(width: 236, height: 64)
@@ -38,8 +41,12 @@ struct OnboardingView: View {
                     .onTapGesture {
                         try? button.play(animationName: "active")
                     }
+                Text("Purchase includes access.")
+                    .customFont(.footnote)
+                    .opacity(0.7)
             }
-            
+            .padding(40)
+            .padding(.top,40)
         }
     }
     
