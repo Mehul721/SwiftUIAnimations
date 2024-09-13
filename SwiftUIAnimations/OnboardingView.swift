@@ -15,7 +15,7 @@ struct OnboardingView: View {
         ZStack {
             background
             VStack(alignment:.leading, spacing: 16) {
-                Text("Learn design     & code")
+                Text("Learn design & code")
                     .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
                     
                 Text("Don't skip design.")
