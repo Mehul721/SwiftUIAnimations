@@ -17,6 +17,7 @@
 		7540A37A2C92132400CBD479 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7540A3762C92132400CBD479 /* Inter-SemiBold.ttf */; };
 		7540A37B2C92132400CBD479 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7540A3772C92132400CBD479 /* Poppins-Bold.ttf */; };
 		7540A37E2C93679B00CBD479 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540A37D2C93679B00CBD479 /* CustomFont.swift */; };
+		7540A3852C96033F00CBD479 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540A3842C96033F00CBD479 /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		7540A3772C92132400CBD479 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		7540A37C2C92136100CBD479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7540A37D2C93679B00CBD479 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		7540A3842C96033F00CBD479 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				750B8A7A2C8E187E005B8304 /* SwiftUIAnimationsApp.swift */,
 				750B8A7C2C8E187E005B8304 /* ContentView.swift */,
 				750B8A882C8E18A3005B8304 /* OnboardingView.swift */,
+				7540A3842C96033F00CBD479 /* SignInView.swift */,
 				7540A3782C92132400CBD479 /* Fonts */,
 				750B8A7E2C8E187F005B8304 /* Assets.xcassets */,
 				750B8AB72C8E1BCA005B8304 /* RiveAssets */,
@@ -213,6 +216,7 @@
 				7540A37E2C93679B00CBD479 /* CustomFont.swift in Sources */,
 				750B8A7D2C8E187E005B8304 /* ContentView.swift in Sources */,
 				750B8A7B2C8E187E005B8304 /* SwiftUIAnimationsApp.swift in Sources */,
+				7540A3852C96033F00CBD479 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
