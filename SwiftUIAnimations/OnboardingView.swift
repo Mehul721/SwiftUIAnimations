@@ -21,7 +21,7 @@ struct OnboardingView: View {
                 Text("Don't skip design.")
                     .customFont(.body)
                     .opacity(0.7)
-                    .frame(maxWidth: .infinity,alignment: .leading)
+                    .frame(maxWidth: .infinity,alignment: .trailing)
                 Spacer()
                 
                 button.view()
