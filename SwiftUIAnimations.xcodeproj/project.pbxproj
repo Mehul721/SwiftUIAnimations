@@ -13,6 +13,7 @@
 		750B8A822C8E187F005B8304 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750B8A812C8E187F005B8304 /* Preview Assets.xcassets */; };
 		750B8A892C8E18A3005B8304 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B8A882C8E18A3005B8304 /* OnboardingView.swift */; };
 		750B8AC12C8E1C6E005B8304 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 750B8AC02C8E1C6E005B8304 /* RiveRuntime */; };
+		7529DD042C99FE1B00B6EA4C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7529DD032C99FE1B00B6EA4C /* CustomTextField.swift */; };
 		7540A3792C92132400CBD479 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7540A3752C92132400CBD479 /* Inter-Regular.ttf */; };
 		7540A37A2C92132400CBD479 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7540A3762C92132400CBD479 /* Inter-SemiBold.ttf */; };
 		7540A37B2C92132400CBD479 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7540A3772C92132400CBD479 /* Poppins-Bold.ttf */; };
@@ -41,6 +42,7 @@
 		750B8ABC2C8E1BCA005B8304 /* confetti.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = confetti.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/confetti.riv"; sourceTree = "<group>"; };
 		750B8ABD2C8E1BCA005B8304 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = button.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/button.riv"; sourceTree = "<group>"; };
 		750B8ABE2C8E1BCA005B8304 /* house.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = house.riv; path = "../../../../../Downloads/SwiftUI Animations /RiveAssets/house.riv"; sourceTree = "<group>"; };
+		7529DD032C99FE1B00B6EA4C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		7540A3752C92132400CBD479 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		7540A3762C92132400CBD479 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		7540A3772C92132400CBD479 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				750B8AB72C8E1BCA005B8304 /* RiveAssets */,
 				750B8A802C8E187F005B8304 /* Preview Content */,
 				7540A37D2C93679B00CBD479 /* CustomFont.swift */,
+				7529DD032C99FE1B00B6EA4C /* CustomTextField.swift */,
 			);
 			path = SwiftUIAnimations;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				750B8A892C8E18A3005B8304 /* OnboardingView.swift in Sources */,
 				7540A37E2C93679B00CBD479 /* CustomFont.swift in Sources */,
+				7529DD042C99FE1B00B6EA4C /* CustomTextField.swift in Sources */,
 				750B8A7D2C8E187E005B8304 /* ContentView.swift in Sources */,
 				750B8A7B2C8E187E005B8304 /* SwiftUIAnimationsApp.swift in Sources */,
 				7540A3852C96033F00CBD479 /* SignInView.swift in Sources */,
