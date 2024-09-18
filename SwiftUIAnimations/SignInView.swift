@@ -34,6 +34,13 @@ struct SignInView: View {
                 SecureField("", text: $password)
                 .customTextField(image:Image("Icon Lock"))}
         
+            Label("Sign In",systemImage: "arrow.right")
+                .padding(20)
+                .frame(maxWidth: .infinity)
+                .background(.pink)
+                .foregroundStyle(Color.white)
+                .cornerRadius(20,corners:[.topRight,.bottomLeft,.bottomRight])
+                .cornerRadius(8, corners: .topLeft)
             HStack {
                 Rectangle().frame(height:1).opacity(0.1)
                 
