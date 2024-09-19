@@ -16,8 +16,36 @@ struct OnboardingView: View {
         ZStack {
             background
             content
+                .offset(y:showModel ? -50:0)
+            
+            Color("Shadow")
+                .opacity(showModel ? 0.4 : 0)
+                .ignoresSafeArea()
             if showModel {
                 SignInView()
+                    .transition(.move(edge: .bottom))
+                
+                    .overlay(
+                        Button{
+                            withAnimation(.spring()){
+                                showModel=false
+                            }
+                        }
+                        label:{
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .frame(width:20,height:20)
+                                .foregroundStyle(Color.black)
+                                .padding(10)
+                                .background(.white)
+                                .mask(Circle())
+                            .shadow(color:
+                                Color("Shadow").opacity(0.3),
+                                radius: 9,x:0,y:3)
+                        }
+                            .frame(maxHeight: .infinity, alignment: .bottom)
+                    )
+                    .zIndex(1)
             }
         }
     }
