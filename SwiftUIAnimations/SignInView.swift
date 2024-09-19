@@ -35,12 +35,14 @@ struct SignInView: View {
                 .customTextField(image:Image("Icon Lock"))}
         
             Label("Sign In",systemImage: "arrow.right")
+                .customFont(.headline)
                 .padding(20)
                 .frame(maxWidth: .infinity)
-                .background(.pink)
+                .background(Color(hex: "F77D8E"))
                 .foregroundStyle(Color.white)
                 .cornerRadius(20,corners:[.topRight,.bottomLeft,.bottomRight])
                 .cornerRadius(8, corners: .topLeft)
+                .shadow(color: Color(hex:"F77D8E").opacity(0.5), radius: 20, x: 0, y: 10)
             HStack {
                 Rectangle().frame(height:1).opacity(0.1)
                 
@@ -60,7 +62,7 @@ struct SignInView: View {
                 
             }
         }
-        .padding(30)
+        .padding(40)
         .background(.regularMaterial)//blur background
         .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))//the region around signin area highlighted.
         .shadow(color:Color("Shadow").opacity(0.3),radius: 5,x:0,y:4)
