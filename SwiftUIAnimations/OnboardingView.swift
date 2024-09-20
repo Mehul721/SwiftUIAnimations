@@ -23,7 +23,7 @@ struct OnboardingView: View {
                 .ignoresSafeArea()
             if showModel {
                 SignInView()
-                    .transition(.move(edge: .bottom))
+                    .transition(.move(edge: .top).combined(with: .opacity))
                 
                     .overlay(
                         Button{
