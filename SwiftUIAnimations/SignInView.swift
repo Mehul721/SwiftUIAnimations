@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct SignInView: View {
     @State var email=""
     @State var password=""
+    let check=RiveViewModel(fileName: "check",stateMachineName: "State Machine 1")
+    
     var body: some View {
         VStack(spacing:24) {
             Text("Sign In")
@@ -25,7 +28,7 @@ struct SignInView: View {
                 
                 TextField("", text: $email)
                     .customTextField()
-                    }
+            }
             VStack(alignment: .leading) {
                 Text("Password")
                     .customFont(.subheadline)
@@ -33,7 +36,7 @@ struct SignInView: View {
                 
                 SecureField("", text: $password)
                 .customTextField(image:Image("Icon Lock"))}
-        
+            
             Label("Sign In",systemImage: "arrow.right")
                 .customFont(.headline)
                 .padding(20)
@@ -70,6 +73,12 @@ struct SignInView: View {
         .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous)
             .stroke(.linearGradient(colors:[.white.opacity(0.8),.white.opacity(0.1)], startPoint: .topLeading, endPoint: .bottomTrailing)))
         .padding()
+        .overlay(
+            check.view()
+                .frame(width: 100, height: 100)
+                .allowsHitTesting(false)
+            
+        )
     }
 }
 
