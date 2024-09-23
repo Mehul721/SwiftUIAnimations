@@ -17,8 +17,8 @@ struct SignInView: View {
     let confetti=RiveViewModel(fileName: "confetti",stateMachineName: "State Machine 1")
     
     func LogIn() {
-        if email != "" && password != ""{
-            isLoading=true
+        isLoading=true
+        if email != ""{
             DispatchQueue.main.asyncAfter(deadline: .now()+1){
                 try? check.triggerInput("Check")
             }
@@ -98,8 +98,8 @@ struct SignInView: View {
                         }
                     }
                     .padding(40)
-                    .background(.regularMaterial)//blur background
-                    .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))//the region around signin area highlighted.
+                    .background(.regularMaterial)
+                    .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
                     .shadow(color:Color("Shadow").opacity(0.3),radius: 5,x:0,y:4)
                     .shadow(color:Color("Shadow").opacity(0.3),radius: 30,x:0,y:30)
                     .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous)
