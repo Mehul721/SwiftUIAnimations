@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("selectedTab") var selectedTab: Tab = .chat
     var body: some View {
         OnboardingView()
     }
 }
 
 #Preview {
-    ContentView()
+    OnboardingView()
 }
