@@ -21,6 +21,9 @@
 		7540A3852C96033F00CBD479 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540A3842C96033F00CBD479 /* SignInView.swift */; };
 		757AA0DB2C9C235100DC21C5 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 757AA0DA2C9C235100DC21C5 /* RiveRuntime */; };
 		75B0EE612CA3532400CB49E2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0EE602CA3532400CB49E2 /* TabBar.swift */; };
+		75B0EE682CA87C6B00CB49E2 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0EE672CA87C6B00CB49E2 /* VCard.swift */; };
+		75B0EE6C2CA87DC700CB49E2 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0EE692CA87DC700CB49E2 /* Course.swift */; };
+		75B0EE6D2CA87DC700CB49E2 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0EE6A2CA87DC700CB49E2 /* CourseSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		7540A37D2C93679B00CBD479 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		7540A3842C96033F00CBD479 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		75B0EE602CA3532400CB49E2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		75B0EE672CA87C6B00CB49E2 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
+		75B0EE692CA87DC700CB49E2 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		75B0EE6A2CA87DC700CB49E2 /* CourseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +85,7 @@
 				7540A37C2C92136100CBD479 /* Info.plist */,
 				750B8A7A2C8E187E005B8304 /* SwiftUIAnimationsApp.swift */,
 				750B8A7C2C8E187E005B8304 /* ContentView.swift */,
+				75B0EE6B2CA87DC700CB49E2 /* Model */,
 				75B0EE5F2CA352BC00CB49E2 /* Styles */,
 				75B0EE5E2CA352A400CB49E2 /* Views */,
 				7540A3782C92132400CBD479 /* Fonts */,
@@ -86,6 +93,7 @@
 				757AA0E32C9C2EB200DC21C5 /* RiveAssets */,
 				750B8A802C8E187F005B8304 /* Preview Content */,
 				75B0EE602CA3532400CB49E2 /* TabBar.swift */,
+				75B0EE672CA87C6B00CB49E2 /* VCard.swift */,
 			);
 			path = SwiftUIAnimations;
 			sourceTree = "<group>";
@@ -125,6 +133,15 @@
 				7529DD032C99FE1B00B6EA4C /* CustomTextField.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		75B0EE6B2CA87DC700CB49E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75B0EE692CA87DC700CB49E2 /* Course.swift */,
+				75B0EE6A2CA87DC700CB49E2 /* CourseSection.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +228,10 @@
 			files = (
 				750B8A892C8E18A3005B8304 /* OnboardingView.swift in Sources */,
 				7540A37E2C93679B00CBD479 /* CustomFont.swift in Sources */,
+				75B0EE6C2CA87DC700CB49E2 /* Course.swift in Sources */,
+				75B0EE6D2CA87DC700CB49E2 /* CourseSection.swift in Sources */,
 				7529DD042C99FE1B00B6EA4C /* CustomTextField.swift in Sources */,
+				75B0EE682CA87C6B00CB49E2 /* VCard.swift in Sources */,
 				75B0EE612CA3532400CB49E2 /* TabBar.swift in Sources */,
 				750B8A7D2C8E187E005B8304 /* ContentView.swift in Sources */,
 				750B8A7B2C8E187E005B8304 /* SwiftUIAnimationsApp.swift in Sources */,
