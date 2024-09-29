@@ -22,7 +22,7 @@ struct VCard: View {
             
             
         }
-        .padding(30)
+        .padding(29)
         .background(.linearGradient(colors:[course.color,course.color.opacity(0.5)], startPoint:.topLeading,endPoint:.bottomTrailing))
         .mask(RoundedRectangle(cornerRadius: 20,style: .continuous))
         .shadow(color:course.color.opacity(0.8),radius: 8,x: 0,y: 12)
