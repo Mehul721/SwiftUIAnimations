@@ -14,6 +14,7 @@ struct HCard: View {
             VStack(alignment: .leading,spacing:8){
                 Text(section.title)
                     .customFont(.title2)
+                
                     .frame(maxWidth: .infinity,alignment: .leading)
                 Text(section.caption)
                     .customFont(.body)
