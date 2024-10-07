@@ -36,7 +36,7 @@ struct SideMenu: View {
                 .customFont(.subheadline2)
                 .frame(maxWidth:.infinity,alignment: .leading)
                 .padding(.horizontal,24)
-                .padding(.top,40)
+                .padding(.top,39)
                 .opacity(0.7)
             
             
