@@ -28,7 +28,7 @@ struct SideMenu: View {
                 }
                 
                 Spacer()
-                    
+                
             }
             .padding()
             
@@ -36,26 +36,34 @@ struct SideMenu: View {
                 .customFont(.subheadline2)
                 .frame(maxWidth:.infinity,alignment: .leading)
                 .padding(.horizontal,24)
-                .padding(.top,39)
+                .padding(.top,40)
                 .opacity(0.7)
             
             
-            VStack{
-                Rectangle()
-                    .frame(height:1)
-                    .opacity(0.1)
-                    .padding(.horizontal)
-                HStack(spacing:14){
-                    icon.view()
-                        .frame(width:32,height:32)
-                        .opacity(0.6)
-                        .foregroundStyle(Color.white)
-                    Text("Home")
-                        .customFont(.subheadline2)
+            VStack(alignment: .leading, spacing: 0){
+                ForEach(menuItems) { item in
+                    Rectangle()
+                        .frame(height:1)
+                        .opacity(0.1)
+                        .padding(.horizontal)
+                    HStack(spacing:14){
+                        item.icon.view()
+                            .frame(width:32,height:32)
+                            .opacity(0.6)
+                            .foregroundStyle(Color.white)
+                        Text(item.text)
+                            .customFont(.subheadline2)
+                    }
+                    .frame(maxWidth:.infinity,alignment:.leading)
+                    .padding(8)
+                    .onTapGesture {
+                        try? item.icon.setInput("active", value: true)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            try? item.icon.setInput("active", value: false)
+                        }
+                    }
                 }
-                .frame(maxWidth:.infinity,alignment: .leading)
-                .padding(12)
-            }
+        }
             .padding(8)
             Spacer()
         }
@@ -65,9 +73,19 @@ struct SideMenu: View {
         .mask(RoundedRectangle(cornerRadius: 30,style:.continuous))
         .frame(maxWidth: .infinity, alignment: .leading)
     }
-    
 }
-
 #Preview {
     SideMenu()
 }
+
+struct MenuItems:Identifiable {
+    var id:UUID = UUID()
+    var text:String
+    var icon:RiveViewModel
+}
+var menuItems:[MenuItems] = [
+    MenuItems(text:"Home",icon:RiveViewModel(fileName:"icons",artboardName:"HOME")),
+    MenuItems(text:"Search",icon:RiveViewModel(fileName:"icons",artboardName:"SEARCH")),
+    MenuItems(text:"Favorites",icon:RiveViewModel(fileName:"icons",artboardName:"LIKE/STAR")),
+    MenuItems(text:"Help",icon:RiveViewModel(fileName:"icons",artboardName:"CHAT"))
+    ]
