@@ -21,6 +21,7 @@
 		7540A37E2C93679B00CBD479 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540A37D2C93679B00CBD479 /* CustomFont.swift */; };
 		7540A3852C96033F00CBD479 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540A3842C96033F00CBD479 /* SignInView.swift */; };
 		757AA0DB2C9C235100DC21C5 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 757AA0DA2C9C235100DC21C5 /* RiveRuntime */; };
+		757CD77F2CB6E6B700E9500B /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CD77E2CB6E6B700E9500B /* MenuRow.swift */; };
 		75B0EE612CA3532400CB49E2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0EE602CA3532400CB49E2 /* TabBar.swift */; };
 		75B0EE682CA87C6B00CB49E2 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0EE672CA87C6B00CB49E2 /* VCard.swift */; };
 		75B0EE6C2CA87DC700CB49E2 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0EE692CA87DC700CB49E2 /* Course.swift */; };
@@ -45,6 +46,7 @@
 		7540A37C2C92136100CBD479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7540A37D2C93679B00CBD479 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		7540A3842C96033F00CBD479 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		757CD77E2CB6E6B700E9500B /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 		75B0EE602CA3532400CB49E2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		75B0EE672CA87C6B00CB49E2 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 		75B0EE692CA87DC700CB49E2 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				75BC55CA2CAF069300E03BF1 /* HCard.swift */,
 				75D2168B2CB066B300F885D8 /* HomeView.swift */,
 				751795ED2CB1C53D00D5BF39 /* SideMenu.swift */,
+				757CD77E2CB6E6B700E9500B /* MenuRow.swift */,
 			);
 			path = SwiftUIAnimations;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				750B8A7B2C8E187E005B8304 /* SwiftUIAnimationsApp.swift in Sources */,
 				7540A3852C96033F00CBD479 /* SignInView.swift in Sources */,
 				75113C322C9B4ED700D85237 /* Extensions.swift in Sources */,
+				757CD77F2CB6E6B700E9500B /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
