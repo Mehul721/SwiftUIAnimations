@@ -28,11 +28,8 @@ struct SideMenu: View {
                     Text("Mobile Developer")
                         .customFont(.subheadline)
                         .opacity(0.6)
-                    
                 }
-                
                 Spacer()
-                
             }
             .padding()
             
@@ -61,7 +58,6 @@ struct SideMenu: View {
                 .padding(.top,40)
                 .opacity(0.7)
             
-            
             VStack(alignment: .leading, spacing: 0){
                 ForEach(menuItems2) { item in
                     Rectangle()
@@ -73,11 +69,24 @@ struct SideMenu: View {
         }
             .padding(8)
             
-            HStack {
-               
+            HStack(spacing:14) {
+                menuItems3[0].icon.view()
+                    .frame(width:32,height:32)
+                    .opacity(0.6)
+                    .onChange(of: isDarkMode) {
+                        newValue in
+                        if newValue {
+                            try? menuItems3[0].icon.setInput("active",value:true)
+                        }else{
+                            try? menuItems3[0].icon.setInput("active",value:false)
+                        }
+                    }
+                Text(menuItems3[0].text)
+                    .customFont(.headline)
                 Toggle("",isOn: $isDarkMode)
                     .padding(.trailing,30)
             }
+            .padding()
             Spacer()
         }
         .foregroundStyle(Color.white)
@@ -108,7 +117,7 @@ var menuItems2:[MenuItems] = [
     MenuItems(text:"Notifications",icon:RiveViewModel(fileName:"icons",artboardName:"BELL"),menu:.notifications),
     ]
 var menuItems3:[MenuItems] = [
-    MenuItems(text:"Dark Mode",icon:RiveViewModel(fileName:"icons",artboardName:"Settings"),menu:.darkMode),
+    MenuItems(text:"Dark Mode",icon:RiveViewModel(fileName:"icons",artboardName:"SETTINGS"),menu:.darkMode),
     ]
 enum SelectedMenu:String{
     case home
