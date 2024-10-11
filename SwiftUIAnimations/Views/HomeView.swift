@@ -1,4 +1,4 @@
-//
+ //
 //  HomeView.swift
 //  SwiftUIAnimations
 //
@@ -22,6 +22,7 @@ struct HomeView: View {
                     .customFont(.largeTitle)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal,20)
+                    .padding(.top,40)
                 
                 ScrollView(.horizontal,showsIndicators:false){
                     HStack(spacing:20){
@@ -32,6 +33,7 @@ struct HomeView: View {
                     }
                     .padding(20)
                     .padding(.bottom,10)
+                    
                 }
                 Text("Recent")
                     .customFont(.title3)
