@@ -35,7 +35,7 @@ struct OnboardingView: View {
                         label:{
                             Image(systemName: "xmark")
                                 .resizable()
-                                .frame(width:20,height:20)
+                                .frame(width:19,height:20)
                                 .foregroundStyle(Color.black)
                                 .padding(10)
                                 .background(.white)
